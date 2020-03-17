@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import include, path
 <<<<<<< HEAD
 
+from ApacheLaunch.views import saludo, despedida, dameFecha, calculaEdad
+
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/',admin.site.urls),
+<<<<<<< HEAD
 =======
 from ApacheLaunch.views import saludo, despedida, dameFecha, calculaEdad
 
@@ -32,5 +35,11 @@ urlpatterns = [
     path('fecha/', dameFecha),
     path('edades/<int:edad>/<int:anho>', calculaEdad)
 >>>>>>> c043b222d1f42fa89e2d83d879d6fcdfcbaa7f2e
+=======
+    path('saludo/', saludo),
+    path('mano/', despedida),
+    path('fecha/', dameFecha),
+    path('edad/<int:edad>/<int:anho>/', calculaEdad)
+>>>>>>> miguel
 ]
 

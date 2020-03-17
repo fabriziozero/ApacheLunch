@@ -25,15 +25,11 @@ SECRET_KEY = 'mkqh!klx1@pso$$lpguc08omxhwmx3tm-!j3g1(ldaig%4tvgg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
-=======
 ALLOWED_HOSTS = ["www.apachelunch.localhost","127.0.0.1"]
->>>>>>> c043b222d1f42fa89e2d83d879d6fcdfcbaa7f2e
 
 
 # Application definition
-#
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Launch.apps.LaunchConfig',
-    'blog.apps.BlogConfig',
-
 ]
 
 MIDDLEWARE = [
@@ -83,12 +77,8 @@ WSGI_APPLICATION = 'ApacheLaunch.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ApacheLunch',
-        'USER': 'test',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

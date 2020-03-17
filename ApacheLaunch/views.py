@@ -26,7 +26,7 @@ def dameFecha(request):
     documento = """<html>
     <body>
     <h1>
-        Fecha y hora actual %s
+        Fecha y hora actuales %s
     </h1>
     </body>
     </html> """ % fecha_actual

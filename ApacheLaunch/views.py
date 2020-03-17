@@ -3,6 +3,7 @@ import datetime
 from django.template import Template, Context
 
 def saludo(request): #primera vita
+    nombre = "Miguel"
 
     doc_externo = open("/home/miguel/PycharmProjects/ApacheLunch/ApacheLaunch/plantillas/miplantilla.html")
 
@@ -10,7 +11,7 @@ def saludo(request): #primera vita
 
     doc_externo.close()
 
-    ctx = Context()
+    ctx = Context({"nombre_persona":nombre})
 
     documento = plt.render(ctx)
 

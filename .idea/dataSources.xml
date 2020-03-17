@@ -15,5 +15,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/ApacheLunch</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="a7c0b4a0-b9d1-41dc-8eed-954c8ed71f9f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+    </data-source>
   </component>
 </project>
